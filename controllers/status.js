@@ -2,7 +2,7 @@
 
 const Package = require('../package.json')
 const shell = require('shelljs')
-const urlBackend = '/Users/alexmejicanos/.bitnami/stackman/machines/xampp/volumes/root/htdocs/backend'
+const urlBackend = '/var/www/html/backend'
 
 module.exports = {
     //Adding the functions
