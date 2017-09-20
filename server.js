@@ -6,8 +6,8 @@ const Hapi = require('hapi');
 const server = new Hapi.Server();
 
 server.connection({
-    host: 'localhost',
-    port: '3000'
+    host: '0.0.0.0',
+    port: '6666'
 })
 
 server.register([

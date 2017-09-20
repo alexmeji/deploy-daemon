@@ -9,6 +9,18 @@ exports.register = (server, options, next) => {
         handler: Status.status
     })
 
+    server.route({
+        path: '/deploy',
+        method: 'GET',
+        handler: Status.deploy
+    })
+
+    server.route({
+        path: '/routes',
+        method: 'GET',
+        handler: Status.routes
+    })
+
     next()
 }
 
