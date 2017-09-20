@@ -2,7 +2,7 @@
 
 const Package = require('../package.json')
 const shell = require('shelljs')
-const urlBackend = '/var/www/html/backend'
+const urlBackend = '/Users/alexmejicanos/.bitnami/stackman/machines/xampp/volumes/root/htdocs/backend'
 
 module.exports = {
     //Adding the functions
@@ -40,10 +40,8 @@ module.exports = {
                     message: stdout
                 })
             } else {
-                reply({
-                    code: code,
-                    message: stdout
-                })
+                reply.view('routes', {data: stdout})
+                
             }
         })
     }

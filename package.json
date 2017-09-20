@@ -17,8 +17,10 @@
   "dependencies": {
     "boom": "^4.2.0",
     "glue": "^4.1.0",
+    "handlebars": "^4.0.10",
     "hapi": "^16.1.0",
     "mongojs": "^2.4.0",
-    "shelljs": "^0.7.8"
+    "shelljs": "^0.7.8",
+    "vision": "^4.1.1"
   }
 }
